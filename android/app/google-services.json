@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "868355526269",
+    "project_id": "skoolbustracker",
+    "storage_bucket": "skoolbustracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868355526269:android:1de60cac177f7d2bdfab14",
+        "android_client_info": {
+          "package_name": "com.example.parent_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868355526269-b1b7pbbc6l49tc5unm6mvmsuju1s13df.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parent_app",
+            "certificate_hash": "135a02fe5e1d39a539400d02a70e5f1611f77aa4"
+          }
+        },
+        {
+          "client_id": "868355526269-llomti2j9vip5mfjemt9ub57ieltgpa2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1B431xv6QxTn0LM0IxmxgxFqpqQVrz_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868355526269-llomti2j9vip5mfjemt9ub57ieltgpa2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
