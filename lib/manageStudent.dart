@@ -8,8 +8,7 @@ class ManageStudent extends StatefulWidget {
   _ManageStudentState createState() => _ManageStudentState();
 }
 class _ManageStudentState extends State<ManageStudent>{
-  String busNo, driverName, driverPhone, state, studentName, studentGrade, studentPhone;
-  bool pick, drop, leaveSchool, atSchool;
+  String busNo, driverName, driverPhone, state, studentName, studentGrade, studentPhone, status;
 
   getBusNo(busNo) {
     this.busNo = busNo;
@@ -43,10 +42,7 @@ class _ManageStudentState extends State<ManageStudent>{
       "studentName": studentName,
       "studentGrade": studentGrade,
       "studentPhone": studentPhone,
-      "pick": false,
-      "atSchool": false,
-      "leaveSchool": false,
-      "drop": false
+      "status": "at home"
     };
 
     documentReference.set(students).whenComplete(() {

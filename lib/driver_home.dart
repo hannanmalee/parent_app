@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parent_app/selectBus.dart';
+import 'package:double_back_to_close_app/double_back_to_close_app.dart';
 import 'customShape.dart';
 import 'map.dart';
 import 'status.dart';
@@ -41,7 +42,13 @@ class _DriverHomePageState extends State<DriverHomePage> {
           ),
           preferredSize: Size.fromHeight(kToolbarHeight + 120)),
 
-      body: SingleChildScrollView(
+    //   body: DoubleBackToCloseApp(
+    //         snackBar: const SnackBar(
+    //         content: Text('Tap back again to leave'),
+    //         ),
+    // child:
+
+      body:SingleChildScrollView(
 
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -399,6 +406,7 @@ class _DriverHomePageState extends State<DriverHomePage> {
           ),
         ),
       ),
+
     );
   }
 }
