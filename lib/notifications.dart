@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'customShape.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 
 class Notifications extends StatelessWidget {
   @override
@@ -23,7 +23,7 @@ class Notifications extends StatelessWidget {
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('Notifications', style: TextStyle(color: Colors.white, fontSize: 20,fontWeight:FontWeight.w400,),),
+                Text('Notifications', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 32,fontWeight:FontWeight.w400, ),),),
 
               ],),),
           ),

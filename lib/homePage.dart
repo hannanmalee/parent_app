@@ -5,6 +5,7 @@ import 'package:parent_app/setting.dart';
 import 'package:parent_app/status.dart';
 import 'dart:ui' as ui;
 import 'customShape.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -33,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                    ),
                 child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                  Text('Homepage', style: TextStyle(color: Colors.white, fontSize: 20,fontWeight:FontWeight.w400,),),
+                  Text('Home', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 44,fontWeight:FontWeight.w400, ),),),
               ],),),
             ),
             preferredSize: Size.fromHeight(kToolbarHeight + 120)),
@@ -113,14 +114,13 @@ class _HomePageState extends State<HomePage> {
                                             style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 24,
-                                            fontFamily: 'Avenir',
                                             fontWeight: FontWeight.w700),
                                       ),
-                                      Text("Unchai",
-                                            style: TextStyle(
+                                      Text("Un Jai",
+                                            style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                             color: Colors.white,
-                                            fontFamily: 'Avenir',
-                                            ),
+                                              fontSize:12,
+                                            ),),
                                       ),
                     ]
                   ),
@@ -199,14 +199,13 @@ class _HomePageState extends State<HomePage> {
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 24,
-                                      fontFamily: 'Avenir',
                                       fontWeight: FontWeight.w700),
                                 ),
-                                Text("Unchai",
-                                  style: TextStyle(
+                                Text("Un Jai",
+                                  style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                     color: Colors.white,
-                                    fontFamily: 'Avenir',
-                                  ),
+                                    fontSize:12,
+                                  ),),
                                 ),
                               ]
                           ),
@@ -285,14 +284,13 @@ class _HomePageState extends State<HomePage> {
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 24,
-                                            fontFamily: 'Avenir',
                                             fontWeight: FontWeight.w700),
                                       ),
-                                      Text("Unchai",
-                                        style: TextStyle(
+                                      Text("Un Jai",
+                                        style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                           color: Colors.white,
-                                          fontFamily: 'Avenir',
-                                        ),
+                                          fontSize:12,
+                                        ),),
                                       ),
                                     ]
                                 ),
@@ -371,14 +369,13 @@ class _HomePageState extends State<HomePage> {
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 24,
-                                            fontFamily: 'Avenir',
                                             fontWeight: FontWeight.w700),
                                       ),
-                                      Text("Unchai",
-                                        style: TextStyle(
+                                      Text("Un Jai",
+                                        style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                           color: Colors.white,
-                                          fontFamily: 'Avenir',
-                                        ),
+                                          fontSize:12,
+                                        ),),
                                       ),
                                     ]
                                 ),

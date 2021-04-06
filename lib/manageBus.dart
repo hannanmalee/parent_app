@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'customShape.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -183,7 +184,7 @@ class _ManageBusState extends State<ManageBus>{
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('Manage buses', style: TextStyle(color: Colors.white, fontSize: 20,fontWeight:FontWeight.w400,),),
+                Text('Manage Buses', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 32,fontWeight:FontWeight.w400, ),),),
 
               ],),),
           ),

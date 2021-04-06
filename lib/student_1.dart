@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'customShape.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class Student1 extends StatefulWidget {
@@ -80,7 +81,7 @@ class _StudentState extends State<Student1> {
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('BUS 1', style: TextStyle(color: Colors.white, fontSize: 48,fontWeight:FontWeight.w500,),),
+                Text('BUS 1', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 36,fontWeight:FontWeight.w400, ),),),
 
               ],),),
           ),

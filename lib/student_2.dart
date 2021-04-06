@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'customShape.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class Student2 extends StatefulWidget {
@@ -80,7 +81,7 @@ class _StudentState extends State<Student2> {
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('BUS 2', style: TextStyle(color: Colors.white, fontSize: 48,fontWeight:FontWeight.w500,),),
+                Text('BUS 2', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 36,fontWeight:FontWeight.w400, ),),),
 
               ],),),
           ),
@@ -100,6 +101,7 @@ class _StudentState extends State<Student2> {
                       key: Key(documentSnapshot["studentName"]),
                       elevation: 4,
                       margin: EdgeInsets.all(8),
+                      // color: Colors.brown[200],
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8)),
                       child: ListTile(
@@ -109,12 +111,12 @@ class _StudentState extends State<Student2> {
                         )),
                         subtitle: Text(documentSnapshot["status"],
                             style: TextStyle(
-                                color: Colors.deepOrange
+                                color: Colors.deepOrange[300]
                             )),
                         trailing: IconButton(
                             icon: Icon(
-                              Icons.more_vert,
-                              color: Colors.red,
+                              Icons.arrow_forward_ios,
+                              color: Colors.deepOrange[100],
                             ),
                             onPressed: () {
                               showDialog(

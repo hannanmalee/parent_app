@@ -7,7 +7,7 @@ import 'status.dart';
 import 'notifications.dart';
 import 'setting.dart';
 import 'dart:ui' as ui;
-
+import 'package:google_fonts/google_fonts.dart';
 
 class DriverHomePage extends StatefulWidget {
   @override
@@ -36,8 +36,8 @@ class _DriverHomePageState extends State<DriverHomePage> {
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('Homepage', style: TextStyle(color: Colors.white, fontSize: 20,fontWeight:FontWeight.w400,),),
-                Text('driver', style: TextStyle(color: Colors.white,),),
+                Text('Home', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 44,fontWeight:FontWeight.w400, ),),),
+                Text('Driver', style: TextStyle(color: Colors.white,),),
               ],),),
           ),
           preferredSize: Size.fromHeight(kToolbarHeight + 120)),
@@ -126,11 +126,11 @@ class _DriverHomePageState extends State<DriverHomePage> {
                                               fontFamily: 'Avenir',
                                               fontWeight: FontWeight.w700),
                                         ),
-                                        Text("Unchai",
-                                          style: TextStyle(
+                                        Text("Un Jai",
+                                          style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                             color: Colors.white,
-                                            fontFamily: 'Avenir',
-                                          ),
+                                            fontSize:12,
+                                          ),),
                                         ),
                                       ]
                                   ),
@@ -212,11 +212,11 @@ class _DriverHomePageState extends State<DriverHomePage> {
                                               fontFamily: 'Avenir',
                                               fontWeight: FontWeight.w700),
                                         ),
-                                        Text("Unchai",
-                                          style: TextStyle(
+                                        Text("Un Jai",
+                                          style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                             color: Colors.white,
-                                            fontFamily: 'Avenir',
-                                          ),
+                                            fontSize:12,
+                                          ),),
                                         ),
                                       ]
                                   ),
@@ -298,11 +298,11 @@ class _DriverHomePageState extends State<DriverHomePage> {
                                               fontFamily: 'Avenir',
                                               fontWeight: FontWeight.w700),
                                         ),
-                                        Text("Unchai",
-                                          style: TextStyle(
+                                        Text("Un Jai",
+                                          style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                             color: Colors.white,
-                                            fontFamily: 'Avenir',
-                                          ),
+                                            fontSize:12,
+                                          ),),
                                         ),
                                       ]
                                   ),
@@ -384,11 +384,11 @@ class _DriverHomePageState extends State<DriverHomePage> {
                                               fontFamily: 'Avenir',
                                               fontWeight: FontWeight.w700),
                                         ),
-                                        Text("Unchai",
-                                          style: TextStyle(
+                                        Text("Un Jai",
+                                          style: GoogleFonts.fahkwang(textStyle: TextStyle(
                                             color: Colors.white,
-                                            fontFamily: 'Avenir',
-                                          ),
+                                            fontSize:12,
+                                          ),),
                                         ),
                                       ]
                                   ),

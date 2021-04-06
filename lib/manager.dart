@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'customShape.dart';
 import 'manageBus.dart';
 import 'manageStudent.dart';
@@ -26,7 +27,7 @@ class Manager extends StatelessWidget {
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('Manage', style: TextStyle(color: Colors.white, fontSize: 20,fontWeight:FontWeight.w400,),),
+                Text('Manage', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 36,fontWeight:FontWeight.w400, ),),),
 
               ],),),
           ),
@@ -51,7 +52,7 @@ class Manager extends StatelessWidget {
                   Stack(
                       children: <Widget>[
                         Container(
-                          height: 60,
+                          height: 120,
                           child: RaisedButton(
                             onPressed: () {
                               Navigator.push(
@@ -122,7 +123,7 @@ class Manager extends StatelessWidget {
                   Stack(
                       children: <Widget>[
                         Container(
-                          height: 60,
+                          height: 120,
                           child: RaisedButton(
                             onPressed: () {
                               Navigator.push(

@@ -73,7 +73,7 @@ class _SignUpState extends State<SignUp> {
                               Container(
                                   padding: EdgeInsets.only(left: 40),
                                   child: Text(
-                                    "Unchai",
+                                    "Un Jai",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 34,

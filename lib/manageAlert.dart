@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'customShape.dart';
 
 
@@ -23,14 +24,12 @@ class ManageAlert extends StatelessWidget {
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('Manage Alerts', style: TextStyle(color: Colors.white, fontSize: 20,fontWeight:FontWeight.w400,),),
+                Text('Manage Alerts', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 32,fontWeight:FontWeight.w400, ),),),
 
               ],),),
           ),
           preferredSize: Size.fromHeight(kToolbarHeight + 120)),
-      body: Center(
-
-      ),
+      body: Column()
     );
   }
 }

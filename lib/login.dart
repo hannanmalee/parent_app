@@ -58,7 +58,7 @@ class _LoginState extends State<Login> {
                               Container(
                                   padding: EdgeInsets.only(left: 40),
                                   child: Text(
-                                    "Unchai",
+                                    "Un Jai",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 34,

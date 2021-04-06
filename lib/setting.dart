@@ -4,6 +4,7 @@ import 'auth_helper.dart';
 import 'customShape.dart';
 import 'login.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class Setting extends StatefulWidget {
@@ -16,7 +17,7 @@ class _SettingPageState extends State<Setting> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   User user;
   bool isloggedin = false;
-
+  String email;
 
 
   @override
@@ -26,6 +27,7 @@ class _SettingPageState extends State<Setting> {
   }
 
   getUser() async {
+
     User firebaseUser = _auth.currentUser;
     await firebaseUser?.reload();
     firebaseUser = _auth.currentUser;
@@ -58,19 +60,18 @@ class _SettingPageState extends State<Setting> {
               ),
               child: Column( mainAxisAlignment: MainAxisAlignment.center ,children: <Widget>[
 
-                Text('Settings', style: TextStyle(color: Colors.white, fontSize: 20,fontWeight:FontWeight.w400,),),
+                Text('Settings', style: GoogleFonts.fahkwang(textStyle:TextStyle(color: Colors.white, fontSize: 32,fontWeight:FontWeight.w400, ),),),
 
               ],),),
           ),
           preferredSize: Size.fromHeight(kToolbarHeight + 120)),
 
-        body: SafeArea(
+        body: SingleChildScrollView(
           child: Column(
-
             children: [
               Container(
               width: double.infinity,
-              height: 200,
+              height: 120,
                 child: !isloggedin
                     ? CircularProgressIndicator()
                  : Container(
@@ -84,7 +85,7 @@ class _SettingPageState extends State<Setting> {
                   ),
               ),
               SizedBox(
-                height: 60,
+                height: 5,
               ),
               Text(
                 "Hello"
@@ -96,7 +97,7 @@ class _SettingPageState extends State<Setting> {
               ),
               ),
               SizedBox(
-                height: 10,
+                height: 5,
               ),
               Text(
                 "${user.email}"
@@ -110,37 +111,133 @@ class _SettingPageState extends State<Setting> {
               SizedBox(
                 height: 10,
               ),
-              Container(
-                  height: 40,
-                  child: RaisedButton(
-                    onPressed: () {
-                      AuthHelper.logOut();
-                      showToastMessage("Logged out");
-                    },
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30)
+
+              Padding(
+                padding: const EdgeInsets.only(left: 8, right: 8, top: 0, bottom: 0),
+                child: Row(
+                  children: [
+                    Text(
+                      "ACCOUNT",style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.indigo,
                     ),
-                    padding: EdgeInsets.all(0),
-                    child: Ink(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30)
-                      ),
-                      child: Container(
-                        constraints: BoxConstraints(maxWidth: 260.0, minHeight: 60.0),
-                        alignment: Alignment.center,
-                        child: Text(
-                          "Log out",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Color(0xffFE5A3F),
-                              fontSize: 18
-                          ),
-                        ),
-                      ),
                     ),
-                  ),
+                  ],
                 ),
+              ),
+              const SizedBox(height: 10.0),
+              Card(
+                elevation: 0.5,
+                margin: const EdgeInsets.symmetric(
+                  vertical: 4.0,
+                  horizontal: 8.0,
+                ),
+                child: Column(
+                  children: <Widget>[
+                    ListTile(
+                      leading: Icon(
+                        Icons.person,
+                        color: Colors.blue[800],
+                      ),
+                      title: Text("Change Name"),
+                      trailing: Icon(Icons.edit),
+                      onTap: () {},
+                    ),
+                    _buildDivider(),
+                    ListTile(
+                      leading: Icon(
+                        Icons.phone,
+                        color: Colors.blue[800],
+                      ),
+                      title: Text("Change Phone number"),
+                      trailing: Icon(Icons.edit),
+                      onTap: () {},
+                    ),
+                    _buildDivider(),
+                    ListTile(
+                      leading: Icon(
+                        Icons.location_on,
+                        color: Colors.blue[800],
+                      ),
+                      title: Text("Change Location"),
+                      trailing: Icon(Icons.edit),
+                      onTap: () {},
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20.0),
+
+              Padding(
+                padding: const EdgeInsets.only(left: 8, right: 8, top: 0, bottom: 0),
+                child: Row(
+                  children: [
+                    Text(
+                      "NOTIFICATIONS", style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.indigo,
+                    ),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                  vertical: 8.0,
+                  horizontal: 8.0,
+                ),
+                child: Column(
+                  children: <Widget>[
+                    SwitchListTile(
+                      activeColor: Colors.blue,
+                      value: true,
+                      title: Text("Received notification"),
+                      onChanged: (val) {},
+                    ),
+                    _buildDivider(),
+                    SwitchListTile(
+                      activeColor: Colors.blue,
+                      value: false,
+                      title: Text("Received App Updates"),
+                      onChanged: null,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Container(
+              //     height: 40,
+              //     child: RaisedButton(
+              //       onPressed: () {
+              //         AuthHelper.logOut();
+              //         showToastMessage("Logged out");
+              //       },
+              //       shape: RoundedRectangleBorder(
+              //           borderRadius: BorderRadius.circular(30)
+              //       ),
+              //       padding: EdgeInsets.all(0),
+              //       child: Ink(
+              //         decoration: BoxDecoration(
+              //             color: Colors.white,
+              //             borderRadius: BorderRadius.circular(30)
+              //         ),
+              //         child: Container(
+              //           constraints: BoxConstraints(maxWidth: 260.0, minHeight: 60.0),
+              //           alignment: Alignment.center,
+              //           child: Text(
+              //             "Log out",
+              //             textAlign: TextAlign.center,
+              //             style: TextStyle(
+              //                 color: Color(0xffFE5A3F),
+              //                 fontSize: 18
+              //             ),
+              //           ),
+              //         ),
+              //       ),
+              //     ),
+              //   ),
 
 
             ],
@@ -158,6 +255,18 @@ class _SettingPageState extends State<Setting> {
         textColor: Colors.white, //message text color
         fontSize: 12.0 //message font size
     );
+  }
+
+  Container _buildDivider() {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        horizontal: 8.0,
+      ),
+      width: double.infinity,
+      height: 1.0,
+      color: Colors.grey.shade300,
+    );
+
   }
 }
 
