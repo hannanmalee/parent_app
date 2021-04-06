@@ -163,6 +163,7 @@ class _ManageStudentState extends State<ManageStudent>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
           child: ClipPath(
             clipper: CustomShape(),

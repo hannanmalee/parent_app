@@ -11,6 +11,7 @@ class SelectBus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
           child: ClipPath(
             clipper: CustomShape(),
@@ -277,14 +278,23 @@ class SelectBus extends StatelessWidget {
                         ),
                       ]
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(height: 270,),
 
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      FloatingActionButton(
+                        onPressed: () {},
+                        child: Icon(Icons.live_help_outlined,),
+                        backgroundColor: Colors.pink,
+                      ),
+                    ],
+                  ),
 
 
                 ]
             ),
-
-
 
         ),
       ),

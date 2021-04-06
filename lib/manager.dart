@@ -10,6 +10,7 @@ class Manager extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
           child: ClipPath(
             clipper: CustomShape(),
@@ -42,7 +43,6 @@ class Manager extends StatelessWidget {
       //
       //   )
       body: SingleChildScrollView(
-
         child: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Center(
@@ -189,10 +189,19 @@ class Manager extends StatelessWidget {
                         ),
                       ]
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 270,),
 
-
-                  //Color(0xff6DC8F3), Color(0xff73A1F9)
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      FloatingActionButton(
+                        onPressed: () {},
+                        child: Icon(Icons.live_help_outlined,),
+                        backgroundColor: Colors.pink,
+                      ),
+                    ],
+                  ),
 
                 ]
             ),

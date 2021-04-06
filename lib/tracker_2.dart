@@ -23,10 +23,10 @@ class _StartTrackingState extends State<Tracker2> {
   }
 
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       // appBar: PreferredSize(
       //     child: ClipPath(
       //       clipper: CustomShape(),

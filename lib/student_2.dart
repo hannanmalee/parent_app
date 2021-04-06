@@ -64,6 +64,7 @@ class _StudentState extends State<Student2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
           child: ClipPath(
             clipper: CustomShape(),

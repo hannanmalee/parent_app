@@ -43,6 +43,7 @@ class _SettingPageState extends State<Setting> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.white,
       appBar: PreferredSize(
           child: ClipPath(
             clipper: CustomShape(),
@@ -113,7 +114,7 @@ class _SettingPageState extends State<Setting> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 8, right: 8, top: 0, bottom: 0),
+                padding: const EdgeInsets.only(left: 16, right: 8, top: 0, bottom: 0),
                 child: Row(
                   children: [
                     Text(
@@ -128,7 +129,8 @@ class _SettingPageState extends State<Setting> {
               ),
               const SizedBox(height: 10.0),
               Card(
-                elevation: 0.5,
+                elevation: 0,
+                shadowColor: Colors.white,
                 margin: const EdgeInsets.symmetric(
                   vertical: 4.0,
                   horizontal: 8.0,
@@ -170,7 +172,7 @@ class _SettingPageState extends State<Setting> {
               const SizedBox(height: 20.0),
 
               Padding(
-                padding: const EdgeInsets.only(left: 8, right: 8, top: 0, bottom: 0),
+                padding: const EdgeInsets.only(left: 16, right: 8, top: 0, bottom: 0),
                 child: Row(
                   children: [
                     Text(
@@ -184,6 +186,8 @@ class _SettingPageState extends State<Setting> {
                 ),
               ),
               Card(
+                elevation: 0,
+                shadowColor: Colors.white,
                 margin: const EdgeInsets.symmetric(
                   vertical: 8.0,
                   horizontal: 8.0,
@@ -201,7 +205,7 @@ class _SettingPageState extends State<Setting> {
                       activeColor: Colors.blue,
                       value: false,
                       title: Text("Received App Updates"),
-                      onChanged: null,
+                      onChanged: (val) {},
                     ),
                   ],
                 ),
@@ -264,7 +268,7 @@ class _SettingPageState extends State<Setting> {
       ),
       width: double.infinity,
       height: 1.0,
-      color: Colors.grey.shade300,
+      // color: Colors.grey.shade300,
     );
 
   }

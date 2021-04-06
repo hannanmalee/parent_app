@@ -33,6 +33,7 @@ class _StatusState extends State<Status>{
   Widget build(BuildContext context) {
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
           child: ClipPath(
             clipper: CustomShape(),
@@ -289,10 +290,19 @@ class _StatusState extends State<Status>{
                                   ),
                                 ]
                             ),
-                            SizedBox(height: 10,),
+                            SizedBox(height: 270,),
 
-
-                            //Color(0xff6DC8F3), Color(0xff73A1F9)
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                FloatingActionButton(
+                                  onPressed: () {},
+                                  child: Icon(Icons.live_help_outlined,),
+                                  backgroundColor: Colors.pink,
+                                ),
+                              ],
+                            ),
 
                           ]
 
