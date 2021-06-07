@@ -4,6 +4,7 @@ import 'package:location/location.dart';
 import 'package:parent_app/student_1.dart';
 import 'driver_home.dart';
 import 'customShape.dart';
+import 'map.dart';
 
 class Tracker1 extends StatefulWidget {
   @override
@@ -61,12 +62,12 @@ class _StartTrackingState extends State<Tracker1> {
                   height: 240,
                   child: ElevatedButton.icon(
                     icon: Icon(Icons.check_circle_rounded, size: 40,),
-                    label: Text('GO Checklist', style: TextStyle(fontSize: 25),),
+                    label: Text('See Map', style: TextStyle(fontSize: 25),),
                     onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => Student1(),
+                            builder: (_) => Map(),
                           ));
                     },
                   ),

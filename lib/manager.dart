@@ -69,14 +69,14 @@ class Manager extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(24),
                                   gradient: LinearGradient(colors: [
-                                    Color(0xffFFB157), Color(0xffFFA057),Color(0xffFFB157),
+                                    Color(0xffFF5B95), Color(0xffF8556D)
                                   ],
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
                                   ),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color(0xffFFA057),
+                                      color: Color(0xffF8556D),
                                       blurRadius: 12,
                                       offset: Offset(0, 6),
                                     ),
@@ -140,14 +140,14 @@ class Manager extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(24),
                                   gradient: LinearGradient(colors: [
-                                    Color(0xffFFB157), Color(0xffFFA057),Color(0xffFFB157),
+                                    Color(0xffFF5B95), Color(0xffF8556D)
                                   ],
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
                                   ),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color(0xffFFA057),
+                                      color: Color(0xffF8556D),
                                       blurRadius: 12,
                                       offset: Offset(0, 6),
                                     ),

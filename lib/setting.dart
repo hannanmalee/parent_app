@@ -211,37 +211,37 @@ class _SettingPageState extends State<Setting> {
                 ),
               ),
 
-              // Container(
-              //     height: 40,
-              //     child: RaisedButton(
-              //       onPressed: () {
-              //         AuthHelper.logOut();
-              //         showToastMessage("Logged out");
-              //       },
-              //       shape: RoundedRectangleBorder(
-              //           borderRadius: BorderRadius.circular(30)
-              //       ),
-              //       padding: EdgeInsets.all(0),
-              //       child: Ink(
-              //         decoration: BoxDecoration(
-              //             color: Colors.white,
-              //             borderRadius: BorderRadius.circular(30)
-              //         ),
-              //         child: Container(
-              //           constraints: BoxConstraints(maxWidth: 260.0, minHeight: 60.0),
-              //           alignment: Alignment.center,
-              //           child: Text(
-              //             "Log out",
-              //             textAlign: TextAlign.center,
-              //             style: TextStyle(
-              //                 color: Color(0xffFE5A3F),
-              //                 fontSize: 18
-              //             ),
-              //           ),
-              //         ),
-              //       ),
-              //     ),
-              //   ),
+              Container(
+                  height: 40,
+                  child: RaisedButton(
+                    onPressed: () {
+                      AuthHelper.logOut();
+                      showToastMessage("Logged out");
+                    },
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30)
+                    ),
+                    padding: EdgeInsets.all(0),
+                    child: Ink(
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(30)
+                      ),
+                      child: Container(
+                        constraints: BoxConstraints(maxWidth: 260.0, minHeight: 60.0),
+                        alignment: Alignment.center,
+                        child: Text(
+                          "Log out",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Color(0xffFE5A3F),
+                              fontSize: 18
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
 
 
             ],

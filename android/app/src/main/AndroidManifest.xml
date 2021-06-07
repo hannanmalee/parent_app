@@ -4,7 +4,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
    <application
-        android:label="parent_app"
+        android:label="Un Jai"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -41,6 +41,6 @@
             android:name="flutterEmbedding"
             android:value="2" />
        <meta-data android:name="com.google.android.geo.API_KEY"
-           android:value="AIzaSyC7uZ5qZPxFM8rD2n6Lm6d7NzC8X5tO9bg"/>
+           android:value=" API keys"/>
     </application>
 </manifest>

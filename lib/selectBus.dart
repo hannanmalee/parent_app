@@ -59,11 +59,35 @@ class SelectBus extends StatelessWidget {
                           height: 120,
                           child: RaisedButton(
                             onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (_) => Tracker1(),
-                                  ));
+                              showDialog(
+                                  context: context,
+                                  builder: (BuildContext context)
+                                  {
+                                    return
+                                      AlertDialog(
+                                        title: Text("BUS 1"),
+                                        content: Text(
+                                            "Allow to access your location"),
+                                        actions: <Widget>[
+                                          FlatButton(child: Text("Dismiss"),
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                          ),
+                                          FlatButton(child: Text("Allow"),
+                                            onPressed: () {
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (_) => Tracker1(),
+                                                  )
+                                              );
+                                            },
+                                          )
+                                        ],
+                                      );
+                                  }
+                              );
                             },
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(
@@ -177,11 +201,35 @@ class SelectBus extends StatelessWidget {
                           height: 120,
                           child: RaisedButton(
                             onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (_) => Tracker2(),
-                                  ));
+                              showDialog(
+                                  context: context,
+                                  builder: (BuildContext context)
+                                  {
+                                    return
+                                      AlertDialog(
+                                        title: Text("BUS 2"),
+                                        content: Text(
+                                            "Allow to access your location"),
+                                        actions: <Widget>[
+                                          FlatButton(child: Text("Dismiss"),
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                          ),
+                                          FlatButton(child: Text("Allow"),
+                                            onPressed: () {
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (_) => Tracker2(),
+                                                  )
+                                              );
+                                            },
+                                          )
+                                        ],
+                                      );
+                                  }
+                              );
                             },
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(
